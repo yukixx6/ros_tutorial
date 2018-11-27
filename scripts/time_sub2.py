@@ -7,5 +7,5 @@ def callback(data):
 
 if __name__ == "__main__":
     rospy.init_node('time_sub')
-    sub = rospy.Subscriber('UnixTime', Date , callback)  #changed
+    sub = rospy.Subscriber('Date_and_Time', Date , callback)  #changed
     rospy.spin()

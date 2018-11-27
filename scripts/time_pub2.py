@@ -25,6 +25,6 @@ def talker():
 
 if __name__ == '__main__':
     rospy.init_node('time_pub')
-    pub = rospy.Publisher('UnixTime', Date , queue_size=1)
+    pub = rospy.Publisher('Date_and_Time', Date , queue_size=1)
     talker()
     rospy.spin()

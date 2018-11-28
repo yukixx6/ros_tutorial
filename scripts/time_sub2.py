@@ -2,8 +2,8 @@
 import rospy
 from ros_tutorial.msg import Date  #changed
 
-def callback(data):
-    print("date : %d , time : %f" % (data.date,data.time) )  #changed
+def callback(message):
+    print("date : %d , time : %f" % (message.date,message.time) )  #changed
 
 if __name__ == "__main__":
     rospy.init_node('time_sub')

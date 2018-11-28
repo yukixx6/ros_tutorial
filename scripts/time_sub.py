@@ -2,8 +2,8 @@
 import rospy
 from std_msgs.msg import Float64
 
-def callback(data):
-	print(data.data)
+def callback(message):
+	print(message.data)
 
 if __name__ == "__main__":
 	rospy.init_node('time_sub')

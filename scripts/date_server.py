@@ -19,10 +19,9 @@ def callback_srv(data):  #changed
         d.date = int(d.date.replace('-', ''))
         d.time = float(d.time.replace(':',''))
         d.success = True
-        return d
     except:
         d.success = False
-        return d
+    return d
 
 if __name__ == '__main__':
     rospy.init_node('date_server')
